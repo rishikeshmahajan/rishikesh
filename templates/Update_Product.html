@@ -1,0 +1,14 @@
+{% extends 'comman.html' %}
+{% block pwn %}
+    <table align="center">
+    <form method="post">
+        {% csrf_token %}
+     {{ form }}
+    <tr>
+        <th>
+            <button type="submit">Update</button>
+        </th>
+    </tr>
+        </form>
+    </table>
+{% endblock %}

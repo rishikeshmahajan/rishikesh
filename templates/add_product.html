@@ -1,0 +1,22 @@
+{% extends 'comman.html' %}
+{% block pwn %}
+    {% load static %}
+<form method="post">
+{% csrf_token %}
+<table align="center" border="0">
+    <tr>
+        <th align="center">
+            Add product
+        </th>
+    </tr>
+    {{ form }}
+    <tr>
+        <th colspan="2">
+            <button type="submit">save</button>
+        </th>
+    </tr>
+</table>
+</form>
+
+
+{% endblock %}

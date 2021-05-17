@@ -1,0 +1,17 @@
+{% extends 'comman.html'%}
+{% block pwn%}
+    <h2>product details
+    </h2>
+    <h3>product no:{{ object.pno }}</h3>
+        <h3>product name:{{ object.name }}</h3>
+        <h3>product price:{{ object.price }}</h3>
+    <h3>product quantity:{{ object.quantity }}</h3>
+
+    <h2>to delete the details click on yes</h2>
+
+    <form method="post">
+    {% csrf_token %}
+    <button type="submit">delete</button>
+    </form>
+
+{% endblock %}
